@@ -30,6 +30,6 @@ app.delete('/books/:id', (req, res) => {
   res.status(204).send()
 })
 
-app.listen(4000, () => {
-  console.log('Start server at port 4000.')
+app.listen(1000, () => {
+  console.log('Start server at port 1000.')
 })
