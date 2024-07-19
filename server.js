@@ -30,6 +30,11 @@ app.delete('/books/:id', (req, res) => {
   res.status(204).send()
 })
 
-app.listen(1000, () => {
-  console.log('Start server at port 1000.')
+
+
+app.addListener('connection', function(socket){
+  console.log('Client connected');
+});
+app.listen(3000, () => {
+  console.log('Start server at port 3000.')
 })
